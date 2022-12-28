@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  min-height: 100vh;
+  font-size: 15px;
+  color: hsl(234, 12%, 34%);
+  background-color: hsl(0, 0%, 98%);
+}
+
+.grid {
+  margin: auto;
+  width: 1440px;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-areas:
+    "intro intro intro"
+    "left center right"
+    "left center right";
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+}
+
+.intro {
+  padding: 20px 0;
+  grid-area: intro;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+p {
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+}
+
+.box {
+  padding: 30px;
+  grid-template-rows: 15% 20% auto;
+  display: grid;
+  width: 400px;
+  height: 250px;
+  box-shadow: 1px 8px 20px hsl(229, 6%, 66%);
+  border-radius: 5px;
+}
+
+.left {
+  grid-area: left;
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.center {
+  display: grid;
+  grid-area: center;
+  gap: 20px;
+}
+
+.box01 {
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+.box02 {
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.right {
+  grid-area: right;
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.box img {
+  justify-self: flex-end;
+  align-self: flex-end;
+}
