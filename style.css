@@ -13,8 +13,8 @@ html {
 }
 
 .grid {
-  margin: auto;
   width: 1440px;
+  margin: auto;
   align-items: center;
   justify-content: center;
   display: grid;
