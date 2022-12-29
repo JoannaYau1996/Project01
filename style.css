@@ -89,7 +89,7 @@ p {
 @media only screen and (max-width:600px) and (min-width: 450px) {
 
   .grid {
-  width: 450px;
+  width: 400px;
   margin: auto;
   align-items: center;
   justify-content: center;
@@ -114,7 +114,7 @@ p {
 @media only screen and (max-width: 950px) and (min-width: 600px) {
 
   .grid {
-  width: 856px;
+  width: 100%;
   margin: auto;
   align-content: center;
   justify-content: center;
